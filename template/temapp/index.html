@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--<link rel="stylesheet" href="styleport.css">-->
+    <link rel="stylesheet" href="{%static 'css/styleport.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>portfolio website mobile</title>
+</head>
+<body>
+    <!-----------------------------------------------------nav bar------------------------------------------------------>
+    <div id="particles-js"></div>
+
+    <div  class="nav-bar">
+        <img id="logo" src="{%static 'img\New Project (1).png'%}">
+        <div class="mail">
+            <a href="mailto:babubala2004@gmail.com">babubala2004@gmail.com</a>
+        </div>
+        <div id="res-btn" class="res-btn" onclick="myFunction()">
+            <button id="nav-btn" class="bar" ><i class="fa-solid fa-bars"></i></button>
+            <button id="nav-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="navy" id="navy">
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#qualification">Qualification</a>
+                <a href="#skill">Skill</a>
+                <a href="#project">Projects</a>
+                <a href="#contact">Contact</a>
+                <button href="#contact">Hire Me</button>
+            </nav>
+        </div>
+
+    </div>
+    <!------------------------------------------------------home------------------------------------------------------------------>
+    <div class="home" id="home">
+        <img src="{%static 'img\IMG_20241211_184421.jpg'%}">
+        <section>
+                <h2>Hi,I'm Babu</h2>
+                <h1><span class="auto"></span></h1>
+                <!--<h1>Python<br>FullStack Developer</h1>-->
+                
+                <p>I am a python fullstack developer skilled in both front-end and back-end development.I create seamless web applications by integrating server-side logic with dynamic user interfaces.</p>
+                <a href="link\Resume.pdf" download="babu's resume"><button><i class="fa-solid fa-download"></i>Download CV</button></a>
+                <div>
+                    <a href="https://x.com/bab_u___3?s=09" target="blank"  class="fa-brands fa-x-twitter"></a>
+                    <a href="https://github.com/babu-003"class="fa-brands fa-github"></a>
+                    <a href="https://www.linkedin.com/in/babu-b-9464522a5" target="blank" class="fa-brands fa-linkedin-in"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100070926211092" target="blank"  class="fa-brands fa-facebook-f"></a>
+                </div>  
+        </section>
+    </div>
+    <!------------------------------------------------------about---------------------------------------------------------------------->
+    <div class="about" id="about">
+        <h1>About Me</h1>
+        <h2>my introduction</h2>
+        <img src="{%static 'img\IMG_20241211_184421.jpg'%}">
+        <aside>
+            <p>Proven ability to collaborate effectively in team environment.Eager to enter into the IT sector and apply academic knowledge in dynamic real-world highly motivated and skilled fresher Computer science with a passion for developing innovation software solution.<br>I'm very much passionate to learn new stuff that interests me and can help me to get better.</p>
+            <h3>
+                <div>08.30+</div>
+                <div>04+</div>
+                <div>06+</div>
+            </h3>
+            <h5>
+                <div>Aggregate<br>CGPA</div>
+                <div>Project</div>
+                <div>Months<br>experience</div>
+            </h5>
+            <h4>Course & Internship Certificates</h4>
+            <h6>
+                <div>
+                    <a href="{%static 'img\CSC CERTIFICATE.jpg'%}"><i class="fa fa-file-text"></i><br><t>DCA</t></a>
+                </div>
+                <div>
+                    <a href="{%static 'img\Babu.B.png'%}"><i class="fa fa-file-text"></i><br><t>Python<br>Internship</t></a>
+                </div>
+            </h6>
+        </aside>
+    </div>
+    <!-----------------------------------------------------------qualification------------------------------------------------------------>
+    <div class="qualification" id="qualification">
+        <h1>Qualification</h1>
+        <p>My Personal Journey</p>
+        <h2><i class="fa-solid fa-graduation-cap"></i>Education</h2>
+        <div class="education1">
+            <div class="sscl">
+                <h3>SSLC</h3>
+                <h4>John Dewey<br>High school<br><i class="fa-solid fa-calendar-days"></i>-2019<br><button id="view">View More<i  class="fa-solid fa-arrow-right"></i></button></h4> 
+            </div>
+            <div class="th12">
+                <h3>Class 12th</h3>
+                <h4>John Dewey<br>High school<br> <i class="fa-solid fa-calendar-days"></i>-2021<br><button id="view1">View More<i  class="fa-solid fa-arrow-right"></i></button></h4>
+            </div>
+            <div class="ug">
+                <h3>UG-College</h3>
+                <h4>A.M.Jain<br>College<br><i class="fa-solid fa-calendar-days"></i>-2024<br><button id="view2">View More<i  class="fa-solid fa-arrow-right"></i></button></h4>
+            
+            </div>
+            <div class="pg">
+                <h3>PG-College</h3>
+                <h4>GNC<br>College<br><i class="fa-solid fa-calendar-days"></i>-2026<br><button id="view3">View More<i  class="fa-solid fa-arrow-right"></i></button></h4>
+            </div>
+        </div> 
+        <div class="timeline">
+            <div class="line">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="pop">
+            <div id="popup" class="popup">
+                 <span id="close" class="close">&times;</span>
+                <h2>Class 10th Summary:</h2><br>
+                <p>School:John Dewey matric,hr,sec,school.<br>Location:Panruti,Cuddalore(dist)<br>Group studied:Computer science<br>Scored:74.2%</p>
+            </div> 
+            <div id="popup1" class="popup">
+                 <span id="close1" class="close">&times;</span>
+                <h2>Class 12th Summary:</h2><br>
+                <p>School:John Dewey matric,hr,sec,school.<br>Location:Panruti,Cuddalore(dist)<br>Group studied:Computer science<br>Scored:83%</p>
+            </div>
+            <div id="popup2" class="popup">
+                <span id="close2" class="close">&times;</span>
+                <h2>Ug-college Summary:</h2><br>
+                <p>College:A.M.Jain college.<br>Location:Meenambakam,chennai<br>subject studied:Python,RDMS,SQL,java,php,allid maths<br>Scored:75%</p>
+            </div>
+            <div id="popup3" class="popup">
+                <span id="close3" class="close">&times;</span>
+                <h2>Pg-college Summary:</h2><br>
+                <p>College:Guru Nanak college<br>Location:Velacherry,chennai<br>subject studied:I am attending college<br>Scored:--%</p>
+            </div>  
+        </div>        
+    </div>
+    <!---------------------------------------------------------skill-------------------------------------------------------------------->
+    <div class="skill" id="skill">
+        <h1>My Skill's</h1>
+        <p>we put your ideas and thus  wishes  in the form of unique web project that inspire you and the customer</p><br>
+        <div class="skills_items">
+            <div><img src="{%static 'img\htmllogo.png'%}"><h1>HTML</h1></div>
+            <div><img src="{%static 'img\csslogo.png'%}"><h1>CSS</h1></div>
+            <div><img src="{%static 'img\js.png'%}"><h1>JAVASCRIPT</h1></div>
+            <div><img src="{%static 'img\pythonlogo.png'%}"><h1>PYTHON</h1></div>
+            <div><img src="{%static 'img\djangologo.png'%}"><h1>DJANGO</h1></div>
+        </div>
+    </div>
+    <!---------------------------------------------------------project-------------------------------------------------------------------->
+    <div class="project" id="project">
+        <h1>Projects</h1>
+        <p>From Concept to Code: My Development Journey</p>
+        <div class="slider"id="slider">
+            <div class="pro-div" >
+                <div  class="content_slide">
+                    <div class="pro-img"><img src="{%static 'img\photoweb.png'%}"></div>
+                    <h1>Photograpy-website</h1>
+                    <p>The wherther app is made by me and the languages programe lang use is html css javascript and python  and django framwork and the tool i use is visual code and subline and paint notepad and google ect,,,,The wherther app is made by me and the languages programe lang use is html css javascript and python  and django framwork and the tool i use is visual code and subline and paint notepad and google ect,,,,</p>
+                    <div class="pro-btn">
+                        <button onclick="location.href='https://github.com/babu-003/photography-webpage'">Github Repository<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                        <button onclick="location.href='https://babu-003.github.io/photography-webpage/index.html'">See Live<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    </div>
+                </div>   
+                <div  class="content_slide">
+                    <div class="pro-img"><img src="{%static 'img\cloth.png'%}"></div>
+                    <h1>E-Commerce-website</h1>
+                    <p>The wherther app is made by me and the languages programe lang use is html css javascript and python  and django framwork and the tool i use is visual code and subline and paint notepad and google ect,,,,The wherther app is made by me and the languages programe lang use is html css javascript and python  and django framwork and the tool i use is visual code and subline and paint notepad and google ect,,,,</p>
+                    <div class="pro-btn">
+                        <button>Github Repository<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                        <button>See Live<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    </div>
+                </div>  
+                <div  class="content_slide">
+                    <div class="pro-img"><img src="{%static 'img\cloth.png'%}"></div>
+                    <h1>Photograpy-website</h1>
+                    <p>The wherther app is made by me and the languages programe lang use is html css javascript and python  and django framwork and the tool i use is visual code and subline and paint notepad and google ect,,,,The wherther app is made by me and the languages programe lang use is html css javascript and python  and django framwork and the tool i use is visual code and subline and paint notepad and google ect,,,,</p>
+                    <div class="pro-btn">
+                        <button>Github Repository<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                        <button>See Live<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <a id="prev" class="prev"><i class="fa-solid fa-less-than"></i></a>
+        <a id="next" class="next"><i class="fa-solid fa-greater-than"></i></a>
+        <div class="dots">
+            <div class="dot" data-index="0"></div>
+            <div class="dot" data-index="1"></div>
+            <div class="dot" data-index="2"></div>
+        </div>
+    </div>
+    <!----      ------------------------------------------------------contact------------------------------------------------>
+    <div class="contact" id="contact">
+        <h1>Contact Me</h1>
+        <p>Get in touch</p>
+        <form method="post">
+            {%csrf_token%}
+            <div class="name">
+                <label>Name</label>
+                <input name="name" type="Name" required><br>
+                <h6><!--mesage tag--></h6>
+            </div>
+            <div class="email"> 
+                <label>E-mail</label>   
+                <input type="Email" name="email" required><br>
+                <h6><!--mesage tag--></h6>
+            </div>
+            
+            <div class="message">    
+                <label>Message</label>
+                <textarea name="messsage" required></textarea><br>
+                <h6><!--mesage tag--></h6>
+            </div>    
+            <button type="submit">send meassage<i class="fa-regular fa-paper-plane"></i></button>
+            <h7>{{hi}}</h7>
+        </form>
+        <div class="con-mine">
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa-regular fa-envelope"></i>
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+                <h2>Phone</h2>
+                <p><a href="tel:9342680563">9342680563</a></p><br>
+                <h2>Email</h2>
+                <p><a href="mailto:babu4087f@gmail.com">babu4087f@gmail.com</a></p><br>
+                <h2>Location</h2>
+                <p>Chennai,Tamilnadu.</p>
+            </div>    
+        </div>
+    </div>
+    <!--------------------------------------------------------footer-------------------------------------------------------->
+    <footer>
+        <h1>BABU.B</h1>
+        <h2>Computer Science student</h2>
+        <p>&copy;Babu.All right reserved</p>
+        <div>
+            <a href="https://x.com/bab_u___3?s=09" target="blank"  class="fa-brands fa-x-twitter"></a>
+            <a href="#"class="fa-brands fa-github"></a>
+            <a href="https://www.linkedin.com/in/babu-b-9464522a5" target="blank" class="fa-brands fa-linkedin-in"></a>
+            <a href="https://www.facebook.com/profile.php?id=100070926211092" target="blank"  class="fa-brands fa-facebook-f"></a>
+        </div>
+    </footer> 
+    <button id="topbtn" class="topbtn">&#8679;</button>  
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="{%static 'js/particles.js'%}"></script>
+<script src="{%static 'js/app.js'%}"></script>
+<script src="{%static 'js/scriptport.js'%}"></script>
+</body>
+</html>
