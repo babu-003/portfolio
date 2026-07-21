@@ -6,11 +6,17 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!--<link rel="stylesheet" href="styleport.css">-->
+<!-- update-one start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!--update one end-->
+
     <link rel="stylesheet" href="{%static 'css/styleport.css'%}">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>portfolio website mobile</title>
+    <title>Babu</title>
 </head>
 <body>
     <!-----------------------------------------------------nav bar------------------------------------------------------>
@@ -19,7 +25,7 @@
     <div  class="nav-bar">
         <img id="logo" src="{%static 'img\New Project (1).png'%}">
         <div class="mail">
-            <a href="mailto:babubala2004@gmail.com">babubala2004@gmail.com</a>
+            <a href="#home">Babu.in</a>
         </div>
         <div id="res-btn" class="res-btn" onclick="myFunction()">
             <button id="nav-btn" class="bar" ><i class="fa-solid fa-bars"></i></button>
@@ -40,7 +46,7 @@
     </div>
     <!------------------------------------------------------home------------------------------------------------------------------>
     <div class="home" id="home">
-        <img src="{%static 'img\IMG_20241211_184421.jpg'%}">
+        <img src="{%static 'img\pro_picz.png'%}">
         <section>
                 <h2>Hi,I'm Babu</h2>
                 <h1><span class="auto"></span></h1>
@@ -60,7 +66,7 @@
     <div class="about" id="about">
         <h1>About Me</h1>
         <h2>my introduction</h2>
-        <img src="{%static 'img\IMG_20241211_184421.jpg'%}">
+        <img src="{%static 'img\aboutmez.png'%}">
         <aside>
             <p>Proven ability to collaborate effectively in team environment.Eager to enter into the IT sector and apply academic knowledge in dynamic real-world highly motivated and skilled fresher Computer science with a passion for developing innovation software solution.<br>I'm very much passionate to learn new stuff that interests me and can help me to get better.</p>
             <h3>
@@ -85,60 +91,52 @@
         </aside>
     </div>
     <!-----------------------------------------------------------qualification------------------------------------------------------------>
-    <div class="qualification" id="qualification">
-        <h1>Qualification</h1>
-        <p>My Personal Journey</p>
-        <h2><i class="fa-solid fa-graduation-cap"></i>Education</h2>
-        <div class="education1">
-            <div class="sscl">
-                <h3>SSLC</h3>
-                <h4>John Dewey<br>High school<br><i class="fa-solid fa-calendar-days"></i>-2019<br><button id="view">View More<i  class="fa-solid fa-arrow-right"></i></button></h4> 
-            </div>
-            <div class="th12">
-                <h3>Class 12th</h3>
-                <h4>John Dewey<br>High school<br> <i class="fa-solid fa-calendar-days"></i>-2021<br><button id="view1">View More<i  class="fa-solid fa-arrow-right"></i></button></h4>
-            </div>
-            <div class="ug">
-                <h3>UG-College</h3>
-                <h4>A.M.Jain<br>College<br><i class="fa-solid fa-calendar-days"></i>-2024<br><button id="view2">View More<i  class="fa-solid fa-arrow-right"></i></button></h4>
-            
-            </div>
-            <div class="pg">
-                <h3>PG-College</h3>
-                <h4>GNC<br>College<br><i class="fa-solid fa-calendar-days"></i>-2026<br><button id="view3">View More<i  class="fa-solid fa-arrow-right"></i></button></h4>
-            </div>
-        </div> 
-        <div class="timeline">
-            <div class="line">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
+  <div class="qualification" id="qualification">
+    <h1>Qualification</h1>
+    <p>My Personal Journey</p>
+    <h2><i class="fa-solid fa-graduation-cap"></i>Education</h2>
+    <div class="education1">
+        <div class="sscl">
+            <h3>SSLC</h3>
+            <h4>John Dewey<br>High school<br><i class="fa-solid fa-calendar-days"></i>-2019<br><button id="view">View More<i class="fa-solid fa-arrow-right"></i></button></h4>
         </div>
-        <div class="pop">
-            <div id="popup" class="popup">
-                 <span id="close" class="close">&times;</span>
-                <h2>Class 10th Summary:</h2><br>
-                <p>School:John Dewey matric,hr,sec,school.<br>Location:Panruti,Cuddalore(dist)<br>Group studied:Computer science<br>Scored:74.2%</p>
-            </div> 
-            <div id="popup1" class="popup">
-                 <span id="close1" class="close">&times;</span>
-                <h2>Class 12th Summary:</h2><br>
-                <p>School:John Dewey matric,hr,sec,school.<br>Location:Panruti,Cuddalore(dist)<br>Group studied:Computer science<br>Scored:83%</p>
-            </div>
-            <div id="popup2" class="popup">
-                <span id="close2" class="close">&times;</span>
-                <h2>Ug-college Summary:</h2><br>
-                <p>College:A.M.Jain college.<br>Location:Meenambakam,chennai<br>subject studied:Python,RDMS,SQL,java,php,allid maths<br>Scored:75%</p>
-            </div>
-            <div id="popup3" class="popup">
-                <span id="close3" class="close">&times;</span>
-                <h2>Pg-college Summary:</h2><br>
-                <p>College:Guru Nanak college<br>Location:Velacherry,chennai<br>subject studied:I am attending college<br>Scored:--%</p>
-            </div>  
-        </div>        
+        <div class="th12">
+            <h3>Class 12th</h3>
+            <h4>John Dewey<br>High school<br><i class="fa-solid fa-calendar-days"></i>-2021<br><button id="view1">View More<i class="fa-solid fa-arrow-right"></i></button></h4>
+        </div>
+        <div class="ug">
+            <h3>UG-College</h3>
+            <h4>A.M.Jain<br>College<br><i class="fa-solid fa-calendar-days"></i>-2024<br><button id="view2">View More<i class="fa-solid fa-arrow-right"></i></button></h4>
+        </div>
+        <div class="pg">
+            <h3>PG-College</h3>
+            <h4>GNC<br>College<br><i class="fa-solid fa-calendar-days"></i>-2026<br><button id="view3">View More<i class="fa-solid fa-arrow-right"></i></button></h4>
+        </div>
     </div>
+
+    <div class="pop">
+        <div id="popup" class="popup">
+            <span id="close" class="close">&times;</span>
+            <h2>Class 10th Summary:</h2><br>
+            <p>School:John Dewey matric,hr,sec,school.<br>Location:Panruti,Cuddalore(dist)<br>Group studied:Computer science<br>Scored:74.2%</p>
+        </div>
+        <div id="popup1" class="popup">
+            <span id="close1" class="close">&times;</span>
+            <h2>Class 12th Summary:</h2><br>
+            <p>School:John Dewey matric,hr,sec,school.<br>Location:Panruti,Cuddalore(dist)<br>Group studied:Computer science<br>Scored:83%</p>
+        </div>
+        <div id="popup2" class="popup">
+            <span id="close2" class="close">&times;</span>
+            <h2>Ug-college Summary:</h2><br>
+            <p>College:A.M.Jain college.<br>Location:Meenambakam,chennai<br>subject studied:Python,RDMS,SQL,java,php,allid maths<br>Scored:75%</p>
+        </div>
+        <div id="popup3" class="popup">
+            <span id="close3" class="close">&times;</span>
+            <h2>Pg-college Summary:</h2><br>
+            <p>College:Guru Nanak college<br>Location:Velacherry,chennai<br>subject studied:I am attending college<br>Scored:--%</p>
+        </div>
+    </div>
+</div>
     <!---------------------------------------------------------skill-------------------------------------------------------------------->
     <div class="skill" id="skill">
         <h1>My Skill's</h1>
@@ -153,48 +151,60 @@
     </div>
     <!---------------------------------------------------------project-------------------------------------------------------------------->
     <div class="project" id="project">
-        <h1>Projects</h1>
-        <p>From Concept to Code: My Development Journey</p>
-        <div class="slider"id="slider">
-            <div class="pro-div" >
+     <h1>Projects</h1>
+     <p>From Concept to Code: My Development Journey</p>
+     <div class="slider" id="slider">
+          <div class="pro-div" >
                 <div  class="content_slide">
-                    <div class="pro-img"><img src="{%static 'img\photoweb.png'%}"></div>
-                    <h1>Photograpy-website</h1>
-                    <p>The wherther app is made by me and the languages programe lang use is html css javascript and python  and django framwork and the tool i use is visual code and subline and paint notepad and google ect,,,,The wherther app is made by me and the languages programe lang use is html css javascript and python  and django framwork and the tool i use is visual code and subline and paint notepad and google ect,,,,</p>
-                    <div class="pro-btn">
-                        <button onclick="location.href='https://github.com/babu-003/photography-webpage'">Github Repository<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-                        <button onclick="location.href='https://babu-003.github.io/photography-webpage/index.html'">See Live<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-                    </div>
-                </div>   
-                <div  class="content_slide">
-                    <div class="pro-img"><img src="{%static 'img\ecommerce.png'%}"></div>
-                    <h1>E-Commerce-website</h1>
-                    <p>LUME is a fully designed, fully interactive front-end for an e-commerce website, built to show what the finished online store would look and feel like before any backend or database is added. It has a dark, premium theme with animations, and every part of it actually works — browsing products, filtering and sorting, viewing product details, adding items to a cart that updates live, and going through a complete checkout process with an order confirmation. It also includes a wishlist and login/signup pages. The only thing missing is a real backend, so nothing is actually charged or permanently stored — everything runs in the browser. This makes it perfect for showing a client exactly how the site will work before development begins, and it can later be connected to a real backend without needing any redesign.</p>
-                    <div class="pro-btn">
-                        <button onclick="location.href='https://github.com/babu-003/E-commerce.git'">Github Repository<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-                        <button onclick="location.href='https://babu-003.github.io/E-commerce/ecommerce-site/'">See Live<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-                    </div>
-                </div>  
-                <div  class="content_slide">
-                    <div class="pro-img"><img src="{%static 'img\ironforge.png'%}"></div>
-                    <h1>IronForge-Gym-Website</h1>
-                    <p>IRONFORGE is a demo website for a gym / fitness studio business. It's built to show a potential client what a modern, professional gym website can look like and do — covering everything a real gym site needs.</p>
-                    <div class="pro-btn">
-                        <button onclick="location.href='https://github.com/babu-003/IronForge.git'">Github Repository<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-                        <button onclick="location.href='https://babu-003.github.io/IronForge/ironforge/'">See Live<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-                    </div>
-                </div>  
-            </div>
-        </div>
-        <a id="prev" class="prev"><i class="fa-solid fa-less-than"></i></a>
-        <a id="next" class="next"><i class="fa-solid fa-greater-than"></i></a>
-        <div class="dots">
-            <div class="dot" data-index="0"></div>
-            <div class="dot" data-index="1"></div>
-            <div class="dot" data-index="2"></div>
-        </div>
+                     <div class="pro-img"><img src="{%static 'img\home_page.png'%}"></div>
+                     <h1>Placement cell interview - Campus</h1>
+                     <p>Developed a full-stack web application that streamlines and digitizes the entire campus recruitment process by connecting students, recruiters, and placement officers through a single, centralized platform. The goal of the project was to eliminate manual paperwork, improve communication, and provide a transparent recruitment workflow for educational institutions.</p>
+                     <div class="pro-btn">
+                         <button onclick="location.href='https://github.com/babu-003/placement-project.git'">Github Repository<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                         <button onclick="location.href='#'">See Live<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                     </div>
+                 </div> 
+                 <div  class="content_slide">
+                     <div class="pro-img"><img src="{%static 'img\photoweb.png'%}"></div>
+                     <h1>Photograpy-website</h1>
+                     <p>The wherther app is made by me and the languages programe lang use is html css javascript and python  and django framwork and the tool i use is visual code and subline and paint notepad and google ect,,,,The wherther app is made by me and the languages programe lang use is html css javascript and python  and django framwork and the tool i use is visual code and subline and paint notepad and google ect,,,,</p>
+                     <div class="pro-btn">
+                         <button onclick="location.href='https://github.com/babu-003/photography-webpage'">Github Repository<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                         <button onclick="location.href='https://babu-003.github.io/photography-webpage/index.html'">See Live<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                     </div>
+                 </div>   
+                 <div  class="content_slide">
+                     <div class="pro-img"><img src="{%static 'img\ecommerce.png'%}"></div>
+                     <h1>E-Commerce-website</h1>
+                     <p>LUME is a fully designed, fully interactive front-end for an e-commerce website, built to show what the finished online store would look and feel like before any backend or database is added. It has a dark, premium theme with animations, and every part of it actually works — browsing products, filtering and sorting, viewing product details, adding items to a cart that updates live, and going through a complete checkout process with an order confirmation. It also includes a wishlist and login/signup pages. </p>
+                     <div class="pro-btn">
+                         <button onclick="location.href='https://github.com/babu-003/E-commerce.git'">Github Repository<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                         <button onclick="location.href='https://babu-003.github.io/E-commerce/ecommerce-site/'">See Live<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                     </div>
+                 </div>  
+                 <div  class="content_slide">
+                     <div class="pro-img"><img src="{%static 'img\ironforge.png'%}"></div>
+                     <h1>IronForge-Gym-website</h1>
+                     <p>IRONFORGE is a demo website for a gym / fitness studio business. It's built to show a potential client what a modern, professional gym website can look like and do — covering everything a real gym site needs.</p>
+                     <div class="pro-btn">
+                         <button onclick="location.href='https://github.com/babu-003/IronForge.git'">Github Repository<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                         <button onclick="location.href='https://babu-003.github.io/IronForge/ironforge/'">See Live<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                     </div>
+                 </div>  
+             </div>
+         </div>
+
+
+         <a id="prev" class="prev"><i class="fa-solid fa-less-than"></i></a>
+         <a id="next" class="next"><i class="fa-solid fa-greater-than"></i></a>
+     </div>
+     <div class="dots">
+         <div class="dot" data-index="0"></div>
+         <div class="dot" data-index="1"></div>
+         <div class="dot" data-index="2"></div>
+     </div>
     </div>
-    <!----      ------------------------------------------------------contact------------------------------------------------>
+    <!----------------------------------------------------------contact------------------------------------------------>
     <div class="contact" id="contact">
         <h1>Contact Me</h1>
         <p>Get in touch</p>
@@ -225,9 +235,9 @@
             <i class="fa-solid fa-location-dot"></i>
             <div>
                 <h2>Phone</h2>
-                <p><a href="tel:9342680563">9342680563</a></p><br>
+                <p><a href="tel:9342680563">9342680563</a></p><br><br>
                 <h2>Email</h2>
-                <p><a href="mailto:babu4087f@gmail.com">babu4087f@gmail.com</a></p><br>
+                <p><a href="mailto:babu4087f@gmail.com">babu4087f@gmail.com</a></p><br><br><br>
                 <h2>Location</h2>
                 <p>Chennai,Tamilnadu.</p>
             </div>    
@@ -237,7 +247,18 @@
     <footer>
         <h1>BABU.B</h1>
         <h2>Computer Science student</h2>
-        <p>&copy;Babu.All right reserved</p>
+        <hr>
+        <ul>
+            <h6>Navigation</h6>
+            <a href="#home">home</a><br><br>
+            <a href="#about">About</a><br><br>
+            <a href="#qualification">qualification</a><br><br>
+            <a href="#skill">skill</a><br><br>
+            <a href="#project">Project</a><br><br>
+            <a href="#contact">Contact</a><br><br>
+
+        </ul>
+        <p>&copy;2025 Babu. All Rights Reserved.made with <a>&#x2665;</a> by Babu</p>
         <div>
             <a href="https://x.com/bab_u___3?s=09" target="blank"  class="fa-brands fa-x-twitter"></a>
             <a href="#"class="fa-brands fa-github"></a>
