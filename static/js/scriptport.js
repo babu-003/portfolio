@@ -73,8 +73,8 @@ function updateSliderPosition(index) {
 }
 
 function updateDots() {
-    const dots = document.querySelectorAll('.dot');
-    dots.forEach((dot, index) => {
+    const dot0 = document.querySelectorAll('.dot');
+    dot0.forEach((dot, index) => {
         dot.classList.toggle('active', index === currentIndex);
     });
 }
@@ -92,8 +92,8 @@ document.getElementById('prev').addEventListener('click', function() {
     }
 });
 
-const dots = document.querySelectorAll('.dot');
-dots.forEach(dot => {
+const dot0 = document.querySelectorAll('.dot');
+dot0.forEach(dot => {
     dot.addEventListener('click', function() {
         const index = parseInt(this.getAttribute('data-index'));
         updateSliderPosition(index);
@@ -181,3 +181,69 @@ var typed=new Typed('.auto',{
 });
 
 
+//mobile navclaude
+const slider = document.getElementById('slider');
+
+// Stop this script from binding twice if it ever gets included/run more than once
+if (slider.dataset.sliderInit) {
+    console.warn('Slider already initialized — skipping duplicate setup');
+} else {
+    slider.dataset.sliderInit = 'true';
+
+    const proDiv   = slider.querySelector('.pro-div');
+    const slides   = slider.querySelectorAll('.content_slide');
+    const dots     = document.querySelectorAll('.dot');
+    const prevBtn  = document.getElementById('prev');
+    const nextBtn  = document.getElementById('next');
+
+    let current = 0;
+    const total = slides.length;
+
+    function goTo(index){
+        current = (index + total) % total;
+        proDiv.style.transform = `translateX(-${current * 100}%)`;
+        dots.forEach((d,i)=> d.classList.toggle('active', i === current));
+    }
+
+    prevBtn.addEventListener('click', ()=> goTo(current - 1));
+    nextBtn.addEventListener('click', ()=> goTo(current + 1));
+    dots.forEach((d,i)=> d.addEventListener('click', ()=> goTo(i)));
+
+    /* --- touch / drag swipe --- */
+    let startX = 0;
+    let deltaX = 0;
+    let dragging = false;
+
+    function dragStart(x){
+        dragging = true;
+        startX = x;
+        proDiv.style.transition = 'none';
+    }
+    function dragMove(x, e){
+        if(!dragging) return;
+        deltaX = x - startX;
+        if (e && Math.abs(deltaX) > 10) e.preventDefault(); // stop page scroll fighting the swipe
+        proDiv.style.transform = `translateX(calc(-${current * 100}% + ${deltaX}px))`;
+    }
+    function dragEnd(){
+        if(!dragging) return;
+        dragging = false;
+        proDiv.style.transition = 'transform .55s var(--ease)';
+        if(Math.abs(deltaX) > 60){
+            deltaX < 0 ? goTo(current + 1) : goTo(current - 1);
+        } else {
+            goTo(current);
+        }
+        deltaX = 0;
+    }
+
+    proDiv.addEventListener('touchstart', e => dragStart(e.touches[0].clientX));
+    proDiv.addEventListener('touchmove',  e => dragMove(e.touches[0].clientX, e), { passive:false });
+    proDiv.addEventListener('touchend',   dragEnd);
+
+    proDiv.addEventListener('mousedown', e => dragStart(e.clientX));
+    window.addEventListener('mousemove', e => dragMove(e.clientX));
+    window.addEventListener('mouseup',   dragEnd);
+
+    goTo(0);
+}
